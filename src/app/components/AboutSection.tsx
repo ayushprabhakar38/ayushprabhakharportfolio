@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import devopsImage from 'figma:asset/0f2b8240daa0ca412dd09132e094a609cdc258d9.png';
+import devopsImage from '../../assets/devops.png';
 
 export function AboutSection() {
   const aboutPoints = [
