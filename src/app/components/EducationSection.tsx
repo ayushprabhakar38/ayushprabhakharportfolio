@@ -3,7 +3,7 @@ import { GraduationCap, BookOpen } from 'lucide-react';
 
 export function EducationSection() {
   const education = [
-    {
+    { 
       period: '2023 – 2026',
       degree: 'Bachelor of Computer Applications (BCA)',
       institution: 'GNIOT, Greater Noida',
