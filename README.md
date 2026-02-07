@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built to showcase my skills, projects, and experience as a frontend developer. The website focuses on clean design, performance, and maintainable code using a modern React + TypeScript stack.
 
-🔗 **Live Website:** https://ayushprabhkar.vercel.app/
+🔗 **Live Website:** [https://ayushprabhkar.vercel.app/](https://ayushprabhakharpy.vercel.app/)
 
 ---
 
@@ -48,3 +48,4 @@ It highlights my frontend development skills, technical mindset, and ability to 
 git clone https://github.com/ayushprabharkar38/ayushprabhakharportfolio.git
 cd ayushportfolio
 npm install 
+
