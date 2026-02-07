@@ -1,0 +1,188 @@
+/* Neumorphic Design System */
+
+:root {
+  /* Neumorphic Base Colors */
+  --neuro-bg: #e0e5ec;
+  --neuro-text: #4a5568;
+  --neuro-text-dark: #2d3748;
+  --neuro-accent: #667eea;
+  
+  /* Shadows for Neumorphism */
+  --neuro-shadow-light: #ffffff;
+  --neuro-shadow-dark: #a3b1c6;
+  
+  /* Elevated (Raised) Effect */
+  --neuro-shadow-elevated: 
+    8px 8px 16px var(--neuro-shadow-dark),
+    -8px -8px 16px var(--neuro-shadow-light);
+  
+  /* Pressed (Inset) Effect */
+  --neuro-shadow-pressed: 
+    inset 4px 4px 8px var(--neuro-shadow-dark),
+    inset -4px -4px 8px var(--neuro-shadow-light);
+  
+  /* Subtle Effect */
+  --neuro-shadow-subtle: 
+    4px 4px 8px var(--neuro-shadow-dark),
+    -4px -4px 8px var(--neuro-shadow-light);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base Neumorphic Card */
+.neuro-card {
+  background: var(--neuro-bg);
+  border-radius: 20px;
+  box-shadow: var(--neuro-shadow-elevated);
+  transition: all 0.3s ease;
+}
+
+.neuro-card:hover {
+  box-shadow: 
+    12px 12px 24px var(--neuro-shadow-dark),
+    -12px -12px 24px var(--neuro-shadow-light);
+}
+
+/* Pressed/Inset Card */
+.neuro-inset {
+  background: var(--neuro-bg);
+  border-radius: 20px;
+  box-shadow: var(--neuro-shadow-pressed);
+}
+
+/* Button */
+.neuro-btn {
+  background: var(--neuro-bg);
+  border-radius: 15px;
+  box-shadow: var(--neuro-shadow-elevated);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  padding: 12px 24px;
+  color: var(--neuro-text-dark);
+}
+
+.neuro-btn:hover {
+  box-shadow: 
+    10px 10px 20px var(--neuro-shadow-dark),
+    -10px -10px 20px var(--neuro-shadow-light);
+}
+
+.neuro-btn:active {
+  box-shadow: var(--neuro-shadow-pressed);
+}
+
+/* Icon Container */
+.neuro-icon {
+  background: var(--neuro-bg);
+  border-radius: 50%;
+  box-shadow: var(--neuro-shadow-subtle);
+  transition: all 0.3s ease;
+}
+
+.neuro-icon:hover {
+  box-shadow: var(--neuro-shadow-elevated);
+  transform: translateY(-2px);
+}
+
+/* Input Field */
+.neuro-input {
+  background: var(--neuro-bg);
+  border: none;
+  border-radius: 15px;
+  box-shadow: var(--neuro-shadow-pressed);
+  padding: 14px 18px;
+  color: var(--neuro-text-dark);
+  transition: all 0.3s ease;
+}
+
+.neuro-input:focus {
+  outline: none;
+  box-shadow: 
+    inset 6px 6px 12px var(--neuro-shadow-dark),
+    inset -6px -6px 12px var(--neuro-shadow-light);
+}
+
+.neuro-input::placeholder {
+  color: #a0aec0;
+}
+
+/* Section Container */
+.neuro-section {
+  background: var(--neuro-bg);
+  border-radius: 30px;
+  box-shadow: var(--neuro-shadow-elevated);
+  padding: 40px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .neuro-section {
+    padding: 24px;
+    border-radius: 20px;
+  }
+  
+  .neuro-card {
+    border-radius: 16px;
+  }
+  
+  .neuro-skill-card {
+    padding: 16px;
+  }
+}
+
+/* Smooth Animation */
+.neuro-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Skill Icon Card */
+.neuro-skill-card {
+  background: var(--neuro-bg);
+  border-radius: 20px;
+  box-shadow: var(--neuro-shadow-subtle);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.neuro-skill-card:hover {
+  box-shadow: var(--neuro-shadow-elevated);
+  transform: translateY(-4px);
+}
+
+/* Text Styles */
+.neuro-heading {
+  color: var(--neuro-text-dark);
+}
+
+.neuro-text {
+  color: var(--neuro-text);
+  line-height: 1.8;
+}
+
+/* Link Button */
+.neuro-link {
+  background: var(--neuro-bg);
+  border-radius: 12px;
+  box-shadow: var(--neuro-shadow-subtle);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--neuro-text-dark);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+}
+
+.neuro-link:hover {
+  box-shadow: var(--neuro-shadow-elevated);
+  transform: translateY(-2px);
+}
+
+.neuro-link:active {
+  box-shadow: var(--neuro-shadow-pressed);
+  transform: translateY(0);
+}
