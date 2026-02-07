@@ -3,7 +3,7 @@ import { Mail, Github, Linkedin, MapPin, Languages } from 'lucide-react';
 
 export function ContactSection() {
   const contactInfo = [
-    {
+    { 
       icon: Mail,
       label: 'Email',
       value: 'ayushprabhakar38@gmail.com',
