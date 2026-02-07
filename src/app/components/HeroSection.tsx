@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import profileImage from 'figma:asset/362fe0af52d16a16ecef951c49a0e550ae39ad55.png';
+import profileImage from '../../assets/profilepic.png'; 
 
 export function HeroSection() {
   return (
