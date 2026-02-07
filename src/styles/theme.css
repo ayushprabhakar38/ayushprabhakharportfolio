@@ -1,6 +1,6 @@
 @custom-variant dark (&:is(.dark *));
 
-:root {
+:root { 
   --font-size: 16px;
   --background: #e0e5ec;
   --foreground: #4a5568;
